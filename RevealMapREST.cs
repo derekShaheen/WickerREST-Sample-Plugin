@@ -1,4 +1,5 @@
-﻿using MelonLoader;
+﻿using Il2Cpp;
+using MelonLoader;
 using System.Net;
 using Wicker;
 
@@ -34,6 +35,12 @@ namespace RevealMapREST
         public static void RevealMapHttp(HttpListenerResponse response)
         {
             Processing.RevealMap(response);
+        }
+
+        [GameVariable("GameFullyInitialized")]
+        public static string GetGmeFullyInitialized()
+        {
+            return GameManager.gameFullyInitialized.ToString();
         }
     }
 }
