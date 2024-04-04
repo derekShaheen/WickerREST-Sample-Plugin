@@ -23,11 +23,13 @@ Once installed, the mod will be loaded automatically when you start Farthest Fro
 
 - **Interface**: Use a browser to navigate to `http://localhost:6103` to reveal the dashboard.
 - **Reveal Map**: Send a GET request to `http://localhost:6103/revealMap` to reveal the map.
+- **Example Command*: Provides an example on how to use inputs.
 - **Check Game Initialization**: Access `http://localhost:6103/game-variables` to see the current value of the monitored variables.
 
 This sample project produces a command and a game variable monitor. As of time of writing, the frontend interface looks like this, with this sample plugin loaded.
 
-![SampleUserInterface](https://i.imgur.com/vKwkLkQ.png)
+![SampleUserInterface](https://i.imgur.com/SFzaWUX.png)
+![SampleUserInterface2](https://i.imgur.com/zMIWMhI.png)
 
 ## Developing Your Own Commands and Variables
 

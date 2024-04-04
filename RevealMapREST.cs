@@ -37,6 +37,12 @@ namespace RevealMapREST
             Processing.RevealMap(response);
         }
 
+        [CommandHandler("ExampleCommand")]
+        public static void ExampleCommandHttp(HttpListenerResponse response, string Input1, string Input2 = "Default value")
+        {
+            WickerServer.Instance.LogResponse(response, $"Returning back: {Input1} {Input2}");
+        }
+
         [GameVariable("GameFullyInitialized")]
         public static string GetGmeFullyInitialized()
         {
