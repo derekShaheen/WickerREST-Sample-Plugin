@@ -4,23 +4,24 @@ using Il2Cpp;
 using System.Net;
 using UnityEngine;
 using Wicker;
+using WickerREST;
 
 namespace RevealMapREST
 {
     internal static class Processing
     {
-        public static void RevealMap(HttpListenerResponse response)
+        public static void RevealMap()
         {
             if (GameManager.Instance == null || !GameManager.gameFullyInitialized)
             {
 
-                WickerServer.Instance.LogResponse(response, "Must be in-game to reveal map!");
+                WickerNetwork.Instance.LogResponse("Must be in-game to reveal map!");
                 return;
             }
 
             if (GameManager.Instance != null && GameManager.gameFullyInitialized)
             {
-                WickerServer.Instance.LogResponse(response, "Revealing map...");
+                WickerNetwork.Instance.LogResponse("Revealing map...");
                 GameManager.Instance.cameraManager.fogOfWarEffect.mFog.enabled = false;
                 ActiveConfig.isRevealed = true;
 

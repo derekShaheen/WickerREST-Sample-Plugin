@@ -2,6 +2,7 @@
 using MelonLoader;
 using System.Net;
 using Wicker;
+using WickerREST;
 
 namespace RevealMapREST
 {
@@ -32,15 +33,15 @@ namespace RevealMapREST
         }
 
         [CommandHandler("revealMap")]
-        public static void RevealMapHttp(HttpListenerResponse response)
+        public static void RevealMapHttp()
         {
-            Processing.RevealMap(response);
+            Processing.RevealMap();
         }
 
         [CommandHandler("ExampleCommand")]
-        public static void ExampleCommandHttp(HttpListenerResponse response, string Input1, string Input2 = "Default value")
+        public static void ExampleCommandHttp(string Input1, string Input2 = "Default value")
         {
-            WickerServer.Instance.LogResponse(response, $"Returning back: {Input1} {Input2}");
+            WickerNetwork.Instance.LogResponse($"Returning back: {Input1} {Input2}");
         }
 
         [GameVariable("GameFullyInitialized")]
