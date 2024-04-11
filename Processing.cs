@@ -1,9 +1,6 @@
-﻿using RevealMapREST;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Il2Cpp;
-using System.Net;
 using UnityEngine;
-using Wicker;
 using WickerREST;
 
 namespace RevealMapREST

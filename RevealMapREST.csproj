@@ -28,7 +28,7 @@
       <HintPath>A:\Games\Steam\steamapps\common\Farthest Frontier\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="WickerREST">
-      <HintPath>..\..\RESTConsole\bin\Release\net6.0\WickerREST.dll</HintPath>
+      <HintPath>..\..\WickerREST\bin\Release\net6.0\WickerREST.dll</HintPath>
     </Reference>
   </ItemGroup>
 

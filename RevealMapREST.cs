@@ -1,7 +1,5 @@
 ﻿using Il2Cpp;
 using MelonLoader;
-using System.Net;
-using Wicker;
 using WickerREST;
 
 namespace RevealMapREST
