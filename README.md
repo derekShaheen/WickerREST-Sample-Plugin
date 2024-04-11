@@ -40,10 +40,10 @@ RevealMapREST serves as an example of how to create your own commands and game v
 1. Annotate a static method with the `[CommandHandler]` attribute, providing the path for the command:
     ```csharp
     [CommandHandler("yourCommand")]
-    public static void YourCommandHttp(HttpListenerResponse response)
+    public static void YourCommandHttp()
     {
        // Implement command action
-       Wicker.Server.Instance.SendResponse(response, "Command executed successfully");
+       WickerNetwork.Instance.LogResponse("Command executed successfully"); // Send response to the web service
     }
     ```
 2. Implement the logic within the method. Use Wicker.Server.Instance.SendResponse to send back a response to the caller.
